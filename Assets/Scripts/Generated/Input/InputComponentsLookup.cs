@@ -8,15 +8,27 @@
 //------------------------------------------------------------------------------
 public static class InputComponentsLookup {
 
+    public const int CurrentTarget = 0;
+    public const int LeftMouse = 1;
+    public const int MouseDown = 2;
+    public const int MousePosition = 3;
+    public const int MouseUp = 4;
 
-
-    public const int TotalComponents = 0;
+    public const int TotalComponents = 5;
 
     public static readonly string[] componentNames = {
-
+        "CurrentTarget",
+        "LeftMouse",
+        "MouseDown",
+        "MousePosition",
+        "MouseUp"
     };
 
     public static readonly System.Type[] componentTypes = {
-
+        typeof(CurrentTarget),
+        typeof(LeftMouseComponent),
+        typeof(MouseDownComponent),
+        typeof(MousePositionComponent),
+        typeof(MouseUpComponent)
     };
 }
